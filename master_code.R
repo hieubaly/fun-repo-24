@@ -8,3 +8,5 @@ marsupialsTibble <- as_tibble(marsupials)
 summary(lm(MaxLifeSpan ~ Mass, data = marsupialsTibble))
 
 daniels_Data <- read_csv("./data/ecotype-OB.csv")
+ggplot(marsupialsTibble, aes(x = Mass, y = MaxLifeSpan)) +
+  geom_point()
